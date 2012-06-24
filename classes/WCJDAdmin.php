@@ -14,16 +14,12 @@ class WCJDAdmin {
         add_options_page('WC Jive Dig Audio Preview', 'WC Jive Dig Audio Preview', 1, 'WCJD', array(&$this, 'adminIndex'));
     }
 
-    // public function registerSettings() {
-    //     register_setting(WCJDOptions::OPTIONS, 'WC Jive Dig Audio Preview Settings', array(&$this, 'validateIndexOptions'));
-    //     die();
-    // }
-
     public function adminIndex() {
         // Include jQuery UI
         wp_enqueue_script('jquery-ui-core');
         wp_enqueue_script('jquery-ui-widget');
         wp_enqueue_script('jquery-ui-tabs');
+        wp_enqueue_script('jquery-cookie', plugins_url('javascript/jquery.cookie.js', dirname(__FILE__)), 'jquery', '1.0.0');
 
         // CSS
         wp_register_style('jquery-ui-smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css', false, '1.8.16');

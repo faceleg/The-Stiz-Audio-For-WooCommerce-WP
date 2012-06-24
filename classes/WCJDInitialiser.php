@@ -48,17 +48,22 @@ class WCJDInitialiser {
         add_action('wp_print_scripts', array(&$this->product, 'addAudioPreviewResources'));
 
         add_action('woocommerce_before_shop_loop', array(&$this->product, 'addProductsWrapOpen'));
-        add_action('woocommerce_after_shop_loop', array(&$this->product, 'addProductsWrapClose'));
 
         // Remove undesired thumbnail
         if ($this->options->hideThumbnails()) {
             remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail');
         }
-        add_action('woocommerce_before_shop_loop_item', array(&$this->product, 'displayRating'), 10);
-        add_action('woocommerce_before_shop_loop_item', array(&$this->product, 'displayAudioPreview'), 10);
+        // add_action('woocommerce_before_shop_loop_item', array(&$this->product, 'displayRating'), 10);
+        if ($this->options->playerPosition() === WCJDOptions::DISPLAY_ABOVE_HEADING) {
+           add_action('woocommerce_before_shop_loop_item', array(&$this->product, 'displayAudioPreview'), 10);
+        } else {
+            add_action('woocommerce_after_shop_loop_item', array(&$this->product, 'displayAudioPreview'), 10);
+        }
 
         add_action('woocommerce_after_shop_loop_item', array(&$this->product, 'displayAuthor'), 10);
         add_action('woocommerce_after_shop_loop_item', array(&$this->product, 'displayCategories'), 11);
         add_action('woocommerce_after_shop_loop_item', array(&$this->product, 'informationButton'), 9);
+
+        add_action('woocommerce_after_shop_loop', array(&$this->product, 'addProductsWrapClose'));
     }
 }

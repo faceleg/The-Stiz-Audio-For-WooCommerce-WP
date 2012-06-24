@@ -10,8 +10,13 @@ class WCJDProduct {
     public function addAudioPreviewResources() {
 
         // Media Element JavaScript
-        wp_enqueue_script('media-element', plugins_url('javascript/media-element/mediaelement-and-player.min.js', dirname(__FILE__)), 'jquery', '2.9.1');
+        wp_enqueue_script('media-element', plugins_url('mediaelement-default/mediaelement-and-player.min.js', dirname(__FILE__)), 'jquery', '2.9.1');
         wp_enqueue_script('media-element-initialisation', plugins_url('javascript/media-element/initialisation.js', dirname(__FILE__)), 'media-element', '2.9.1', true);
+        wp_localize_script('media-element-initialisation', 'wcjdAudioPreviewOptions',
+            array(
+                WCJDOptions::PLAYER_WIDTH => $this->options->playerWidth(),
+                WCJDOptions::PLAYER_HEIGHT => $this->options->playerHeight()
+            ));
 
         // Media Element CSS
         // If the user has not chosen to use custom media element CSS, or they have but haven't actually modified the CSS, output the default style.
@@ -19,7 +24,7 @@ class WCJDProduct {
         if ($useCustomMediaElementCss) {
             add_action('wp_head', array(&$this, 'outputCustomMediaElementCss'));
         } else {
-            wp_register_style('media-element-style', plugins_url('woocommerce-jive-dig-audio-preview/css/mediaelementplayer.css', dirname(__FILE___)), false, '2.9.1');
+            wp_register_style('media-element-style', plugins_url('woocommerce-jive-dig-audio-preview/mediaelement-default/mediaelementplayer.css', dirname(__FILE___)), false, '2.9.1');
             wp_enqueue_style('media-element-style');
         }
         // Custom CSS

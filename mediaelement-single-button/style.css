@@ -1,0 +1,66 @@
+.mejs-container {
+    display: inline-block;
+    float: left;
+}
+/* Start: CONTROL BAR */
+.mejs-container .mejs-controls {
+    background: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mejs-controls .mejs-button button {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    margin: 7px 5px;
+    padding: 0;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    border: 0;
+    background: transparent url(controls.png) no-repeat;
+}
+
+/* :focus for accessibility */
+.mejs-controls .mejs-button button:focus {
+    outline: solid 1px yellow;
+}
+
+/* End: CONTROL BAR */
+
+/* Start: Play/pause */
+.mejs-controls .mejs-play button {
+    background-image: url('play.png');
+}
+.mejs-controls .mejs-pause button {
+    background-image: url('pause.png');
+}
+/* End: Play/pause */
+
+
+/* Stop */
+.mejs-controls .mejs-stop button {
+    background-position: -112px 0;
+}
+/* End: Play/pause */
+
+.mejs-time-rail span,
+.mejs-time,
+.mejs-duration,
+.mejs-clear,
+.mejs-currenttime-container, .mejs-currenttime-container span,
+.mejs-controls div {
+    display: none;
+}
+
+.mejs-controls .mejs-pause,
+.mejs-controls .mejs-play {
+    display: block;
+}

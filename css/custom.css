@@ -1,0 +1,57 @@
+body div.wcjd-products ul li.product {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+body div.wcjd-products ul li.product .wcjd-buttons {
+    display: inline-block;
+}
+
+body div.wcjd-products ul li.product .mejs-container,
+body div.wcjd-products ul li.product h3,
+body div.wcjd-products ul li.product span.price,
+body div.wcjd-products ul li.product .wcjd-information {
+    display: inline-block;
+}
+
+body div.wcjd-products ul li.product h3,
+body div.wcjd-products ul li.product span.price {
+    line-height: 24px;
+}
+
+body div.wcjd-products ul li.product h3 {
+    width: 300px;
+    font-size: 20px;
+}
+
+body div.wcjd-products ul li.product span.price {
+    font-size: 15px;
+    position: relative;
+    top: -15px;
+    display: inline-block;
+}
+
+body div.wcjd-products ul li.product .wcjd-buttons {
+    float: right;
+    padding-top: 20px;
+}
+
+body div.wcjd-products ul li.product a.button {
+
+}
+
+body div.wcjd-products ul li.product .wcjd-product-meta {
+    clear: both;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+body div.wcjd-products ul li.product .wcjd-produced-by {
+    float: left;
+}
+
+body div.wcjd-products ul li.product .wcjd-categories {
+    float: right;
+}

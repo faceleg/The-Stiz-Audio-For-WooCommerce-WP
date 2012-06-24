@@ -1,0 +1,25 @@
+.wcjd-wrap {
+    margin: 30px 0 0 30px;
+}
+.wcjd-settings-form {
+    width: 60%;
+    margin-right: 20px;
+    float: left;
+}
+.wcjd-settings-information {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    float: left;
+    width: 30%;
+}
+
+.wcjd-settings-information p:last-child {
+    margin-bottom: 245px;
+}
+
+.wcjd-settings-form textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}

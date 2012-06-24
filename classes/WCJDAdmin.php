@@ -4,37 +4,34 @@
  */
 class WCJDAdmin {
 
-    /**
-     * Preview file path post meta key.
-     */
-    const PREVIEW_URL_KEY = '_wcjd_preview_file_path';
+    public $options;
 
-    /**
-     * Get the preview file path post meta for the current post & output the preview file input view.
-     */
-    public function editProduct() {
-        global $post;
-
-        $previewUrl = get_post_meta($post->ID, self::PREVIEW_URL_KEY, true);
-        include WCJD_ROOT.'/views/admin/preview-file-input.php';
+    public function __construct($options) {
+        $this->options = $options;
     }
 
-    /**
-     * Save or update the preview file path post meta.
-     * @param  {integer} $postID The ID of the post being edited.
-     */
-    public function saveProduct($postID) {
-
-        if (!isset($_POST[self::PREVIEW_URL_KEY])) {
-            return;
-        }
-
-        global $wpdb;
-
-        $previewUrl = $_POST[self::PREVIEW_URL_KEY];
-        $previewUrl = $wpdb->_real_escape($previewUrl);
-
-        add_post_meta($postID, self::PREVIEW_URL_KEY, $previewUrl, true) or update_post_meta($postID, self::PREVIEW_URL_KEY, $previewUrl);
+    public function setupMenu() {
+        add_options_page('WC Jive Dig Audio Preview', 'WC Jive Dig Audio Preview', 1, 'WCJD', array(&$this, 'adminIndex'));
     }
 
+    // public function registerSettings() {
+    //     register_setting(WCJDOptions::OPTIONS, 'WC Jive Dig Audio Preview Settings', array(&$this, 'validateIndexOptions'));
+    //     die();
+    // }
+
+    public function adminIndex() {
+        // Include jQuery UI
+        wp_enqueue_script('jquery-ui-core');
+        wp_enqueue_script('jquery-ui-widget');
+        wp_enqueue_script('jquery-ui-tabs');
+
+        // CSS
+        wp_register_style('jquery-ui-smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css', false, '1.8.16');
+        wp_enqueue_style('jquery-ui-smoothness');
+
+        wp_register_style('wcjd-admin-styles', plugins_url('css/admin/style.css', dirname(__FILE__)), false, '1.0.0');
+        wp_enqueue_style('wcjd-admin-styles');
+
+        include WCJD_ROOT.'/views/admin/index.php';
+    }
 }

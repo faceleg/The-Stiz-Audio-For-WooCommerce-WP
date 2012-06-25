@@ -15,7 +15,8 @@ class WCJDProduct {
         wp_localize_script('media-element-initialisation', 'wcjdAudioPreviewOptions',
             array(
                 WCJDOptions::PLAYER_WIDTH => $this->options->playerWidth(),
-                WCJDOptions::PLAYER_HEIGHT => $this->options->playerHeight()
+                WCJDOptions::PLAYER_HEIGHT => $this->options->playerHeight(),
+                'pluginPath' => plugins_url('mediaelement-default/', __FILE__)
             ));
 
         // Media Element CSS
@@ -24,7 +25,7 @@ class WCJDProduct {
         if ($useCustomMediaElementCss) {
             add_action('wp_head', array(&$this, 'outputCustomMediaElementCss'));
         } else {
-            wp_register_style('media-element-style', plugins_url('woocommerce-jive-dig-audio-preview/mediaelement-default/mediaelementplayer.css', dirname(__FILE___)), false, '2.9.1');
+            wp_register_style('media-element-style', plugins_url('mediaelement-default/mediaelementplayer.css', dirname(__FILE__)), false, '2.9.1');
             wp_enqueue_style('media-element-style');
         }
         // Custom CSS
@@ -59,6 +60,7 @@ class WCJDProduct {
      * Output HTML for product information button.
      */
     public function informationButton() {
+        global $product;
         $productUrl = get_permalink($product->id);
         include WCJD_ROOT.'/views/product/information.php';
     }
@@ -66,8 +68,6 @@ class WCJDProduct {
     public function displayRating() {
         global $product;
         $rating = $product->get_rating_html('sidebar');
-// var_dump($rating, get_class($product));
-        // die($rating);
         include WCJD_ROOT.'/views/product/rating.php';
     }
 

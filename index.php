@@ -8,8 +8,15 @@ Author: Michael Robinson
 Author URI: http://pagesofinterest.net/
 License: http://www.gnu.org/licenses/gpl.html
 */
+ini_set('display_errors', true);
+error_reporting(E_ALL);
 
-define('WCJD_ROOT', dirname(__FILE__));
+if (!defined('WCJD_ROOT')) {
+    define('WCJD_ROOT', dirname(__FILE__));
+}
+
 include_once WCJD_ROOT.'/include.php';
+
+register_activation_hook( __FILE__, array('WCJDInstaller', 'install'));
 
 $initialiser = new WCJDInitialiser();

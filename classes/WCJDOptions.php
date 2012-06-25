@@ -18,10 +18,17 @@ class WCJDOptions {
     const DISPLAY_ABOVE_HEADING = 'wcjd-player-above-heading';
     const DISPLAY_BELOW_HEADING = 'wcjd-player-below-heading';
 
+    const UPLOAD_DIRECTORY_PATH_SEGMENT = 'woocommerce-jive-dig-audio-preview-uploads';
+
     private $options = false;
 
     public function __construct() {
         $this->options = $this->load();
+    }
+
+    public static function downloadDirectory($file = null) {
+        $uploadDirectory =  wp_upload_dir();
+        return $uploadDirectory['basedir'] . '/' . self::UPLOAD_DIRECTORY_PATH_SEGMENT . '/' . $file;
     }
 
     private function load() {

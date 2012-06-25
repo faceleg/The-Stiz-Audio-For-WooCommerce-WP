@@ -37,4 +37,21 @@ class WCJDWooCommerceAdminAdditions {
         add_post_meta($postID, self::PREVIEW_URL_KEY, $previewUrl, true) or update_post_meta($postID, self::PREVIEW_URL_KEY, $previewUrl);
     }
 
+    public function uploadPreviewFile() {
+        do_action('media_upload_file');
+    }
+
+    public function previewFileUploadDirectory($pathdata) {
+        if (isset($_POST['type']) && $_POST['type'] === WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT) {
+
+            // Uploading a downloadable file
+            $subdir = '/'.WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT.$pathdata['subdir'];
+            $pathdata['path'] = str_replace($pathdata['subdir'], $subdir, $pathdata['path']);
+            $pathdata['url'] = str_replace($pathdata['subdir'], $subdir, $pathdata['url']);
+            $pathdata['subdir'] = str_replace($pathdata['subdir'], $subdir, $pathdata['subdir']);
+            return $pathdata;
+
+        }
+    }
+
 }

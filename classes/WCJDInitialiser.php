@@ -26,14 +26,17 @@ class WCJDInitialiser {
             }
 
             // Add Woo Commerce product admin page additions
-            $this->admin = new WCJDWooCommerceAdminAdditions();
-            add_action('woocommerce_product_options_general_product_data', array(&$this->wooCommerceAdminAdditions, 'editProduct'), 10, 2);
+            $this->wooCommerceAdminAdditions = new WCJDWooCommerceAdminAdditions();
+            add_action('woocommerce_product_options_general_product_data', array(&$this->wooCommerceAdminAdditions, 'editProduct'), 1, 2);
             add_action('woocommerce_process_product_meta', array(&$this->wooCommerceAdminAdditions, 'saveProduct'), 10, 2);
+
+            add_filter('upload_dir', array(&$this->wooCommerceAdminAdditions, 'previewFileUploadDirectory'));
+            add_action('media_upload_'.WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT, array(&$this->wooCommerceAdminAdditions, 'uploadPreviewFile'));
 
             // Plugin admin page
             $this->admin = new WCJDAdmin($this->options);
             add_action('admin_menu', array(&$this->admin, 'setupMenu'));
-            add_action('admin_init', array(&$this->admin, 'registerSettings'));
+            // add_action('admin_init', array(&$this->admin, 'registerSettings'));
         } else {
             add_action('plugins_loaded', array(&$this, 'initialiseFrontEnd'));
         }

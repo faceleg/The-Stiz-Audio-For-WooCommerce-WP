@@ -22,20 +22,15 @@ body div.wcjd-products ul li.product span.price {
 }
 
 body div.wcjd-products ul li.product h3 {
-    width: 300px;
     font-size: 20px;
 }
 
 body div.wcjd-products ul li.product span.price {
     font-size: 15px;
-    position: relative;
-    top: -15px;
-    display: inline-block;
 }
 
 body div.wcjd-products ul li.product .wcjd-buttons {
-    float: right;
-    padding-top: 20px;
+    display: inline-block;
 }
 
 body div.wcjd-products ul li.product a.button {

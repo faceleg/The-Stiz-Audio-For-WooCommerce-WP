@@ -16,7 +16,7 @@ class WCJDProduct {
             array(
                 WCJDOptions::PLAYER_WIDTH => $this->options->playerWidth(),
                 WCJDOptions::PLAYER_HEIGHT => $this->options->playerHeight(),
-                'pluginPath' => plugins_url('mediaelement-default/', __FILE__)
+                'pluginPath' => plugins_url('mediaelement-default/', dirname(__FILE__))
             ));
 
         // Media Element CSS

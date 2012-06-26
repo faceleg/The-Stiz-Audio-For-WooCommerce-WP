@@ -1,6 +1,6 @@
 <div class="wrap wcjd-wrap">
     <div class="wcjd-settings-form">
-        <h2>WC Jive Dig Audio Preview Options</h2>
+        <h2>The Stiz - Audio for WooCommerce Options</h2>
 
         <form method="post" action="" autocomplete="off">
 
@@ -116,9 +116,12 @@
     </div>
 
     <div class="wcjd-settings-information">
-        <h2>WC Jive Dig Audio Preview's Roots</h2>
+        <a href="http://www.thestiz.com/?utm_source=wp-wcjd&utm_medium=admin-index&utm_content=stiz-logo&utm_campaign=wcjd" target="_blank" title="New Jersey's premier recording studio for hip-hop, rap and mixtape recording">
+            <img src="<?php echo plugins_url('css/admin/logo-the-stiz.png', __FILE__.'/../../../../'); ?>" />
+        </a>
+        <h2>The Stiz - Audio for WooCommerce</h2>
         <p>
-            WC Jive Dig Audio Preview is the brainchild of Mike Hemberger, who lives at <a target="_blank" href="http://jivedigdesign.com//?utm_source=wcjd&utm_medium=admin-index&utm_content=mike-hemberger&utm_campaign=wcjd">jivedigdesign.com</a>, and uses Twitter.
+            The Stiz - Audio for WooCommerce is the brainchild of Mike Hemberger, who lives at <a target="_blank" href="http://jivedigdesign.com//?utm_source=wcjd&utm_medium=admin-index&utm_content=mike-hemberger&utm_campaign=wcjd">jivedigdesign.com</a>, and uses Twitter.
             <br/>
             <br/>
             <a href="https://twitter.com/JiveDig" class="twitter-follow-button" data-show-count="false">Follow @JiveDig</a>
@@ -132,7 +135,7 @@
         </p>
         <hr/>
         <p>
-            WC Jive Dig Audio Preview uses <a target="_blank" href="http://mediaelementjs.com/">MediaElement</a>, created by John Dyer.
+            The Stiz - Audio for WooCommerce uses <a target="_blank" href="http://mediaelementjs.com/">MediaElement</a>, created by John Dyer.
             <blockquote>
                 <strong>MediaElement</strong>
                 <br/>

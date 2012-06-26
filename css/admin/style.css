@@ -7,11 +7,12 @@
     float: left;
 }
 .wcjd-settings-information {
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-position: right bottom;
     float: left;
     width: 30%;
+}
+
+.wcjd-settings-information img {
+    max-width: 100%;
 }
 
 .wcjd-settings-information p:last-child {

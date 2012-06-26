@@ -19,6 +19,18 @@ class WCJDServeAudio {
         return "{$baseUrl}?nonce={$nonce}&audio={$audioFile}";
     }
 
+    /**
+     * Converts a URI like /wordpress/wp-content/uploads/woocommerce-jive-dig-audio-preview-uploads/2012/06/Damn-It-Feels-Good-To-Be-A-Gangsta.mp3
+     * to something like: /var/www/site.co.nz/public/wordpress/wp-content/uploads/woocommerce-jive-dig-audio-preview-uploads/2012/06/Damn-It-Feels-Good-To-Be-A-Gangsta.mp3
+     * @param  {String} $file The public URI to be converted.
+     * @return {String} The private path to the URI's file.
+     */
+    private static function convertPublicPathToPrivate($file) {
+        $publicPathPortion = str_replace('http://'.$_SERVER['SERVER_NAME'], '', home_url());
+        $privatePathPortion = substr(ABSPATH, 0, strpos(ABSPATH, $publicPathPortion));
+        return $privatePathPortion.$file;
+    }
+
     public function validRequest() {
 
         if (!isset($this->request['nonce'])) {
@@ -47,10 +59,7 @@ class WCJDServeAudio {
             return false;
         }
 
-        $publicPathPortion = str_replace('http://'.$_SERVER['SERVER_NAME'], '', home_url());
-        $privatePathPortion = substr(ABSPATH, 0, strpos(ABSPATH, $publicPathPortion));
-
-        $this->file = $privatePathPortion.$audioFile;
+        $this->file = $this->convertPublicPathToPrivate($audioFile);
 
         if (!is_file($this->file)) {
             return false;

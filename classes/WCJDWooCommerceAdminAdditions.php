@@ -54,4 +54,70 @@ class WCJDWooCommerceAdminAdditions {
         }
     }
 
+    public function limitMediaLibraryTabs($tabs) {
+        if (isset($_GET['wcjd']) && $_GET['wcjd']) {
+            return array(
+                'type' => 'From Computer',
+                'library' => 'Media Library'
+            );
+        }
+        return $tabs;
+    }
+
+    public function filterPostMimeTypes($postMimeTypes) {
+        if (isset($_GET['wcjd']) && $_GET['wcjd']) {
+            return array('audio' => $postMimeTypes['audio']);
+        }
+        return $postMimeTypes;
+    }
+
+    public function limitMediaLibraryEditFields($form_fields, $post) {
+
+        $url_type = get_option('image_default_link_type');
+
+        if('post' === $url_type ) {
+            update_option('image_default_link_type', 'file');
+            $url_type = 'file';
+        }
+
+        if(empty($url_type )) {
+            $url_type = get_user_setting('urlbutton', 'file');
+        }
+
+        $file = wp_get_attachment_url($post->ID);
+        $url = '';
+        if($url_type === 'file') {
+            $url = $file;
+        }
+        $url = esc_attr($url);
+
+        $form_fields['url'] = array(
+            'label'      => __('Audio Preview URL'),
+            'input'      => 'html',
+            'html'       => "<input type='text' readonly='readonly' class='text urlfield' name='attachments[{$post->ID}][url]' value='{$url}' />"
+        );
+
+        unset($form_fields['post_excerpt']);
+        unset($form_fields['post_content']);
+        unset($form_fields['post_title']);
+
+        return $form_fields;
+    }
+
+    public function limitMediaLibraryItems($where, &$wp_query) {
+        global $pagenow, $wpdb;
+        if ($pagenow !== 'media-upload.php') {
+            return $where;
+        }
+        if (!isset($_GET['wcjd']) && !$_GET['wcjd']) {
+            return $where;
+        }
+        $uploadDirectorySegment = WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT;
+
+        $where .= " AND {$wpdb->posts}.guid LIKE '%{$uploadDirectorySegment}%'";
+
+        return $where;
+    }
+
+
 }

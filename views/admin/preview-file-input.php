@@ -28,7 +28,7 @@
             $('#wcjd_upload_preview_button').click(function() {
                 window.send_to_editor_default = window.send_to_editor;
                 window.send_to_editor = window.send_to_editor_wcjd_preview;
-                tb_show('Preview File', 'media-upload.php?type=<?php echo WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT; ?>&TB_iframe=true');
+                tb_show('Preview File', 'media-upload.php?wcjd=true&type=<?php echo WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT; ?>&TB_iframe=true');
             });
         });
     })(jQuery);

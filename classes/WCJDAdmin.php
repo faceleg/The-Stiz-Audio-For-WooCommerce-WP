@@ -11,7 +11,7 @@ class WCJDAdmin {
     }
 
     public function setupMenu() {
-        add_options_page('WC Jive Dig Audio Preview', 'WC Jive Dig Audio Preview', 1, 'WCJD', array(&$this, 'adminIndex'));
+        add_options_page('The Stiz - Audio for WooCommerce', 'The Stiz - Audio for WooCommerce', 1, 'WCJD', array(&$this, 'adminIndex'));
     }
 
     public function adminIndex() {

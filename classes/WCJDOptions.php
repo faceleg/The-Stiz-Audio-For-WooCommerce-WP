@@ -27,7 +27,7 @@ class WCJDOptions {
     }
 
     public static function downloadDirectory($file = null) {
-        $uploadDirectory =  wp_upload_dir();
+        $uploadDirectory = wp_upload_dir();
         return $uploadDirectory['basedir'] . '/' . self::UPLOAD_DIRECTORY_PATH_SEGMENT . '/' . $file;
     }
 
@@ -52,6 +52,8 @@ class WCJDOptions {
     public function save() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             update_option(self::OPTIONS, $_POST);
+            // Reload options
+            $this->load();
         }
     }
 

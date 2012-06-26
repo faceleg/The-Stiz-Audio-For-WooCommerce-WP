@@ -90,7 +90,7 @@ class WCJDProduct {
         $authorUsername = get_the_author_meta('user_login', $authorID);
         $authorNickname = get_the_author_meta('nickname', $authorID);
 
-        $authorName = $authorDisplayName ?: $authorNickname ?: $authorUsername;
+        $authorName = $authorDisplayName ? $authorDisplayName : $authorNickname ? $authorNickname : $authorUsername;
         include WCJD_ROOT.'/views/product/author.php';
     }
 

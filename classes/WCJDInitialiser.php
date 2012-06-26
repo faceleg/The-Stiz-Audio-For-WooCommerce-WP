@@ -32,15 +32,14 @@ class WCJDInitialiser {
 
             add_filter('upload_dir', array(&$this->wooCommerceAdminAdditions, 'previewFileUploadDirectory'));
             add_filter('media_upload_tabs', array(&$this->wooCommerceAdminAdditions, 'limitMediaLibraryTabs'));
-            add_filter( 'attachment_fields_to_edit', array(&$this->wooCommerceAdminAdditions, 'limitMediaLibraryEditFields'), 10, 2 );
+            add_filter('attachment_fields_to_edit', array(&$this->wooCommerceAdminAdditions, 'limitMediaLibraryEditFields'), 10, 2 );
             add_filter('post_mime_types', array(&$this->wooCommerceAdminAdditions, 'filterPostMimeTypes'));
             add_action('media_upload_'.WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT, array(&$this->wooCommerceAdminAdditions, 'uploadPreviewFile'));
-            add_filter( 'posts_where', array(&$this->wooCommerceAdminAdditions, 'limitMediaLibraryItems'), 10, 2 );
+            add_filter('posts_where', array(&$this->wooCommerceAdminAdditions, 'limitMediaLibraryItems'), 10, 2 );
 
             // Plugin admin page
             $this->admin = new WCJDAdmin($this->options);
             add_action('admin_menu', array(&$this->admin, 'setupMenu'));
-            // add_action('admin_init', array(&$this->admin, 'registerSettings'));
         } else {
             add_action('plugins_loaded', array(&$this, 'initialiseFrontEnd'));
         }

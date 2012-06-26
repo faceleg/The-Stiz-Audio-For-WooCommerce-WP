@@ -42,76 +42,87 @@ class WCJDWooCommerceAdminAdditions {
     }
 
     public function previewFileUploadDirectory($pathdata) {
-        if (isset($_POST['type']) && $_POST['type'] === WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT) {
 
-            // Uploading a downloadable file
-            $subdir = '/'.WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT.$pathdata['subdir'];
-            $pathdata['path'] = str_replace($pathdata['subdir'], $subdir, $pathdata['path']);
-            $pathdata['url'] = str_replace($pathdata['subdir'], $subdir, $pathdata['url']);
-            $pathdata['subdir'] = str_replace($pathdata['subdir'], $subdir, $pathdata['subdir']);
+        if (!isset($_POST['type'])){
             return $pathdata;
-
         }
+
+        if ($_POST['type'] !== WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT) {
+            return $pathdata;
+        }
+
+        // Uploading a downloadable file
+        $subdir = '/'.WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT.$pathdata['subdir'];
+        $pathdata['path'] = str_replace($pathdata['subdir'], $subdir, $pathdata['path']);
+        $pathdata['url'] = str_replace($pathdata['subdir'], $subdir, $pathdata['url']);
+        $pathdata['subdir'] = str_replace($pathdata['subdir'], $subdir, $pathdata['subdir']);
+        return $pathdata;
     }
 
     public function limitMediaLibraryTabs($tabs) {
-        if (isset($_GET['wcjd']) && $_GET['wcjd']) {
-            return array(
-                'type' => 'From Computer',
-                'library' => 'Media Library'
-            );
+
+        if (!WCJDStates::ownMediaLibraryRequest()) {
+            return $tabs;
         }
-        return $tabs;
+
+        return array(
+            'type' => 'From Computer',
+            'library' => 'Media Library'
+        );
     }
 
     public function filterPostMimeTypes($postMimeTypes) {
-        if (isset($_GET['wcjd']) && $_GET['wcjd']) {
-            return array();//'audio' => $postMimeTypes['audio']);
+        if (!WCJDStates::ownMediaLibraryRequest()) {
+            return $postMimeTypes;
         }
-        return $postMimeTypes;
+        return array();//'audio' => $postMimeTypes['audio']);
     }
 
-    public function limitMediaLibraryEditFields($form_fields, $post) {
+    public function limitMediaLibraryEditFields($formFields, $post) {
 
-        $url_type = get_option('image_default_link_type');
-
-        if('post' === $url_type ) {
-            update_option('image_default_link_type', 'file');
-            $url_type = 'file';
+        if (!WCJDStates::ownMediaLibraryRequest()) {
+            return $formFields;
         }
 
-        if(empty($url_type )) {
-            $url_type = get_user_setting('urlbutton', 'file');
+        $urlType = get_option('image_default_link_type');
+
+        if('post' === $urlType ) {
+            update_option('image_default_link_type', 'file');
+            $urlType = 'file';
+        }
+
+        if(empty($urlType )) {
+            $urlType = get_user_setting('urlbutton', 'file');
         }
 
         $file = wp_get_attachment_url($post->ID);
         $url = '';
-        if($url_type === 'file') {
+        if($urlType === 'file') {
             $url = $file;
         }
         $url = esc_attr($url);
 
-        $form_fields['url'] = array(
-            'label'      => __('Audio Preview URL'),
-            'input'      => 'html',
-            'html'       => "<input type='text' readonly='readonly' class='text urlfield' name='attachments[{$post->ID}][url]' value='{$url}' />"
+        $formFields['url'] = array(
+            'label' => __('Audio Preview URL'),
+            'input' => 'html',
+            'html' => "<input type='text' readonly='readonly' class='text urlfield' name='attachments[{$post->ID}][url]' value='{$url}' />"
         );
 
-        unset($form_fields['post_excerpt']);
-        unset($form_fields['post_content']);
-        unset($form_fields['post_title']);
+        unset($formFields['post_excerpt']);
+        unset($formFields['post_content']);
+        unset($formFields['post_title']);
 
-        return $form_fields;
+        return $formFields;
     }
 
     public function limitMediaLibraryItems($where, &$wp_query) {
-        global $pagenow, $wpdb;
-        if ($pagenow !== 'media-upload.php') {
+
+        if (!WCJDStates::ownMediaLibraryRequest()) {
             return $where;
         }
-        if (!isset($_GET['wcjd']) && !$_GET['wcjd']) {
-            return $where;
-        }
+
+        global $wpdb;
+
         $uploadDirectorySegment = WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT;
 
         $where .= " AND {$wpdb->posts}.guid LIKE '%{$uploadDirectorySegment}%'";

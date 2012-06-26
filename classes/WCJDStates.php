@@ -16,4 +16,26 @@ class WCJDStates {
     public static function wooCommercePresent() {
         return in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')));
     }
+
+    /**
+     * Determine whether the current request is a media library request initiated from this plugin.
+     * @return {boolean} True if the current request is a media library request initiated from this plugin.
+     */
+    public static function ownMediaLibraryRequest() {
+        global $pagenow;
+
+        if ($pagenow !== 'media-upload.php') {
+            return false;
+        }
+
+        if (!isset($_GET['wcjd'])){
+            return false;
+        }
+
+        if (!$_GET['wcjd']) {
+            return false;
+        }
+
+        return true;
+    }
 }

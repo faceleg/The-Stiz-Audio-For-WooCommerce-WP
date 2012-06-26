@@ -10,8 +10,8 @@ Contributors: Mike Hemberger
 Author URI: http://thestiz.com/
 License: http://www.gnu.org/licenses/gpl.html
 */
-ini_set('display_errors', true);
-error_reporting(E_ALL);
+// ini_set('display_errors', true);
+// error_reporting(E_ALL);
 
 if (!defined('WCJD_ROOT')) {
     define('WCJD_ROOT', dirname(__FILE__));

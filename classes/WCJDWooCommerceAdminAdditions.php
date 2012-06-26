@@ -66,7 +66,7 @@ class WCJDWooCommerceAdminAdditions {
 
     public function filterPostMimeTypes($postMimeTypes) {
         if (isset($_GET['wcjd']) && $_GET['wcjd']) {
-            return array('audio' => $postMimeTypes['audio']);
+            return array();//'audio' => $postMimeTypes['audio']);
         }
         return $postMimeTypes;
     }

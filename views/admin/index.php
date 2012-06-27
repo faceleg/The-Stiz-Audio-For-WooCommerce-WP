@@ -121,7 +121,7 @@
         </a>
         <h2>The Stiz - Audio for WooCommerce</h2>
         <p>
-            The Stiz - Audio for WooCommerce is the brainchild of Mike Hemberger, who lives at <a target="_blank" href="http://jivedigdesign.com//?utm_source=wcjd&utm_medium=admin-index&utm_content=mike-hemberger&utm_campaign=wcjd">jivedigdesign.com</a>, and uses Twitter.
+            The Stiz - Audio for WooCommerce is the brainchild of Mike Hemberger, who lives at <a target="_blank" href="http://thestiz.com//?utm_source=wcjd&utm_medium=admin-index&utm_content=thestiz&utm_campaign=wcjd">thestiz.com</a> and <a target="_blank" href="http://jivedigdesign.com//?utm_source=wcjd&utm_medium=admin-index&utm_content=jivedigdesign&utm_campaign=wcjd">jivedigdesign.com</a>, and uses Twitter.
             <br/>
             <br/>
             <a href="https://twitter.com/JiveDig" class="twitter-follow-button" data-show-count="false">Follow @JiveDig</a>

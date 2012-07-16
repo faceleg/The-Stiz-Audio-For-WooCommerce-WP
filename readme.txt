@@ -4,7 +4,7 @@ Donate link: N/A
 Tags: audio, woocommerce
 Requires at least: 3.0
 Tested up to: 3.4.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,13 @@ This plugin is available using the standard Wordpress plugin process. On the 'ad
 
 == Screenshots ==
 
+1. Preview audio on product list pages.
+2. Edit MediaElement CSS & other options on the plugin admin page.
+
 == Changelog ==
 
+= 1.0.1 =
+* Stability improvement, added screenshots.
+
 = 1.0.0 =
-* First release
+* First release.

@@ -23,7 +23,7 @@ class WCJDOptions {
     private $options = false;
 
     public function __construct() {
-        $this->options = $this->load();
+        $this->load();
     }
 
     public static function downloadDirectory($file = null) {
@@ -32,9 +32,9 @@ class WCJDOptions {
     }
 
     private function load() {
-        $options = get_option(self::OPTIONS);
-        if(!is_array($options)) {
-            $options = array(
+        $this->options = get_option(self::OPTIONS);
+        if(!is_array($this->options)) {
+            $this->optionsoptions = array(
                 self::HIDE_THUMBNAILS => '1',
                 self::USE_CUSTOM_CSS => '1',
                 self::CUSTOM_CSS => $this->defaultCss(),
@@ -44,15 +44,13 @@ class WCJDOptions {
                 self::PLAYER_WIDTH => '400',
                 self::PLAYER_POSITION => self::DISPLAY_ABOVE_HEADING
             );
-            update_option(self::OPTIONS, $options);
+            update_option(self::OPTIONS, $this->options);
         }
-        return $options;
     }
 
     public function save() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             update_option(self::OPTIONS, $_POST);
-            // Reload options
             $this->load();
         }
     }

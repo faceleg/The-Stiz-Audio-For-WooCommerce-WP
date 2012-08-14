@@ -43,11 +43,11 @@ class WCJDWooCommerceAdminAdditions {
 
     public function previewFileUploadDirectory($pathdata) {
 
-        if (!isset($_POST['type'])){
+        if (!isset($_GET['type'])){
             return $pathdata;
         }
 
-        if ($_POST['type'] !== WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT) {
+        if ($_GET['type'] !== WCJDOptions::UPLOAD_DIRECTORY_PATH_SEGMENT) {
             return $pathdata;
         }
 

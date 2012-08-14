@@ -16,7 +16,6 @@ SVNPATH="/tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required
 SVNURL="http://plugins.svn.wordpress.org/the-stiz-audio-for-woocommerce" # Remote SVN repo on wordpress.org, with no trailing slash
 SVNUSER="faceleg" # your svn username
 
-
 # Let's begin...
 echo ".........................................."
 echo
@@ -35,6 +34,10 @@ if [ "$NEWVERSION1" != "$NEWVERSION2" ]; then echo "Versions don't match. Exitin
 
 echo "Versions match in readme.txt and PHP file. Let's proceed..."
 
+# Check we're on the "free" branch
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" != "free" ]; then echo "May only deploy-free from the free branch"; exit 1; fi
+
 cd $GITPATH
 echo -e "Enter a commit message for this new version: \c"
 read COMMITMSG
@@ -44,14 +47,14 @@ echo "Tagging new version in git"
 git tag -a "$NEWVERSION1" -m "Tagging version $NEWVERSION1"
 
 echo "Pushing latest commit to origin, with tags"
-git push origin master
-git push origin master --tags
+git push origin free
+git push origin free --tags
 
 echo
 echo "Creating local copy of SVN repo ..."
 svn co $SVNURL $SVNPATH
 
-echo "Exporting the HEAD of master from git to the trunk of SVN"
+echo "Exporting the HEAD of free from git to the trunk of SVN"
 git checkout-index -a -f --prefix=$SVNPATH/trunk/
 
 echo "Ignoring github specific files and deployment script"
@@ -75,4 +78,4 @@ svn commit --username=$SVNUSER -m "Tagging version $NEWVERSION1"
 echo "Removing temporary directory $SVNPATH"
 rm -fr $SVNPATH/
 
-echo "*** FIN ***"
+echo "*** FINISHED ***"

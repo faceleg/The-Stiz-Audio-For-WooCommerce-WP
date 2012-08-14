@@ -1,0 +1,769 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"alll",
+				"allowAdditionalEditorSelectors"
+			],
+			[
+				"addi",
+				"ADDITIONAL_RAPTOR_CLASSES"
+			],
+			[
+				"jquery-",
+				"jquery-ui-smoothness"
+			],
+			[
+				"wcj",
+				"wcjdAudioPreviewOptions"
+			],
+			[
+				"resiz",
+				"RESIZE_IMAGES_AUTOMATICALLY  (constant)"
+			],
+			[
+				"convert",
+				"convert_cyr_string"
+			],
+			[
+				"audio",
+				"audioFile"
+			],
+			[
+				"woo",
+				"woocommerce_before_shop_loop_item_title"
+			],
+			[
+				"preview",
+				"PREVIEW_URL_KEY"
+			],
+			[
+				"_",
+				"_wcjd_preview_file_path"
+			],
+			[
+				"send",
+				"send_to_editor"
+			],
+			[
+				"func_get",
+				"func_get_args"
+			],
+			[
+				"raptori",
+				"raptorizeAdminEdit"
+			],
+			[
+				"raptor",
+				"raptorizeQuickpress"
+			],
+			[
+				"INDEX_RA",
+				"INDEX_RAPTORIZE_ADMIN_EDITING"
+			],
+			[
+				"RAP",
+				"RAPTOR_SETTINGS"
+			],
+			[
+				"INDEX",
+				"INDEX_ALLOW_IN_PLACE_EDITING"
+			],
+			[
+				"RAPT",
+				"RAPTOR_USAGE_AREAS"
+			],
+			[
+				"allow",
+				"allowInPlaceEditingInput"
+			],
+			[
+				"RAPTOR",
+				"RAPTOR_USAGE_AREAS  (constant)"
+			],
+			[
+				"INDE",
+				"INDEX_ALLOW_IN_PLACE_EDITING  (constant)"
+			],
+			[
+				"INDEX_R",
+				"INDEX_RAPTORIZE_QUICK_PRESS"
+			],
+			[
+				"index",
+				"INDEX_ALLOW_IN_PLACE_EDITING"
+			],
+			[
+				"SAVE_POSTS",
+				"SAVE_POSTS_NONCE"
+			],
+			[
+				"rapt",
+				"raptorInPlaceSave"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"admin",
+				"adminViewingEditablePosts"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"Impor",
+				"important"
+			],
+			[
+				"remove",
+				"removeAttr"
+			],
+			[
+				"vis",
+				"visible"
+			],
+			[
+				"greet",
+				"greet_block_close"
+			],
+			[
+				"coi-",
+				"coi-social-blog"
+			],
+			[
+				"cois-",
+				"coi-social-button"
+			],
+			[
+				"side",
+				"sidebarProduct"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 93.0,
+		"selected_items":
+		[
+			[
+				"proj",
+				"Project: Save As"
+			],
+			[
+				"down",
+				"SFTP: Download File"
+			],
+			[
+				"dele",
+				"Delete Local and Remote Files"
+			],
+			[
+				"remote",
+				"SFTP: Sync Remote -> Local…"
+			],
+			[
+				"dow",
+				"SFTP: Download File"
+			],
+			[
+				"downl",
+				"SFTP: Download File"
+			],
+			[
+				"delete",
+				"Delete Local and Remote Files"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 340.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/error_log",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/dump_name",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/mac-update-promo/include.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/Config.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/mac-update-promo/classes/Config.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/mac-update-promo/classes/Mail.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/dump_message",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/mac-update-promo/classes/License.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/sftp-config.json",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/ejunkie.txt",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate/mac-update-promo/error_log",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/views/admin/preview-file-input.php",
+		"/Users/facelap/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/admin/post-types/product.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/views/admin/index.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/RaptorOptions.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDOptions.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/views/admin/index.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/readme.txt",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/index.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/readme.txt",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/index.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-admin-additional-editor-selector-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/RaptorAdmin.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/Raptor.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/RaptorInitialiser.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-admin-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-quickpress-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-admin-additional-editor-selector.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-remove-native-editors.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-comments-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-in-place-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-admin.css",
+		"/Users/facelap/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/admin/style.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/jquery-ui/jquery-ui-smoothness-1.8.16.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/deploy.sh",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/deploy.sh",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/screenshot-2.jpg",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/screenshot-1.jpg",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDProduct.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/javascript/media-element/initialisation.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/mediaelement-default/mediaelement-and-player.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/mediaelement-default/mediaelementplayer.min.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/css/admin/style.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/jquery.cookie.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/include.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDAdmin.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-quickpress.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDMessages.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDStates.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/views/product/audio-preview.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDServeAudio.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDInitialiser.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/classes/WCJDWooCommerceAdminAdditions.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/css/admin/logo-the-stiz.png",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/woocommerce-template.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/css/mediaelementplayer.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/css/mediaelement.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/include.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/woocommerce-functions.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/admin/post-types/writepanels/writepanel-product_data.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/templates/loop-shop.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/javascript/media-element/mediaelement-and-player.min.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/javascripts/media-element/mediaelement-and-player.min.js",
+		"/Users/facelap/Downloads/johndyer-mediaelement-bf557b8/build/mediaelement-and-player.min.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/classes/WCJDStates.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/admin/post-types/writepanels/writepanel-product-type-variable.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/views/admin/preview-file-input.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/woocommerce-hooks.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce/templates/loop-product-cats.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/classes/WCJDAdmin.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/classes/WCJDMessages.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/views/messages/error.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce-jive-dig-audio-preview/index.php",
+		"/Users/facelap/Sites/Work/PAN/Raptor/src/plugins/i18n/locales/en.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woo-commerce-jive-dig-audio-preview/index.php",
+		"/Users/facelap/Library/Application Support/Sublime Text 2/Packages/User/SFTP.errors.log",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woo-audio-preview/index.php",
+		"/private/var/folders/6y/d3wgcm5x1_ndpm8kyfnxzdt80000gn/T/2ed4734b-8983-4d0b-9daa-32b4036992e5/public_html/shop/code-complete/downloads/release-notes.html",
+		"/private/var/folders/6y/d3wgcm5x1_ndpm8kyfnxzdt80000gn/T/2ed4734b-8983-4d0b-9daa-32b4036992e5/public_html/shop/meta-mate/downloads/release-notes.html",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/index.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-in-place.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/admin.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/plugins/wordpress-media-library/wordpress-media-library.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/RaptorSave.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/plugins/wordpress-media-library/wordpress-media-library.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-common.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/plugins/wp-media-library/wp-media-library.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/RaptorStates.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/views/admin/usage-areas-settings.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/views/admin/index.ph",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-save-function.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/ajax/save.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-save-function.js.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-save-url.js.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/raptor-save-url.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/jquery-raptor-in-place-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/jquery-raptor.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/ajax",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/ckeditor-for-wordpress/ckeditor_class.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/ckeditor-for-wordpress/ckeditor_wordpress.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/classes/RaptorPermissions.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/raptor.php",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/raptor-theme.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css/theme.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/theme.css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/css",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/jquery-raptor-admin-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/ckeditor-for-wordpress/includes/ckeditor.utils.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/sftp-config.json",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/jquery-raptor-comments-init.js",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor/javascript/jquery-raptor-admin-init.js.php",
+		"/Users/facelap/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/wordpress-plugins",
+		"/private/var/folders/6y/d3wgcm5x1_ndpm8kyfnxzdt80000gn/T/sysoutput_utf8.html",
+		"/README.md",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/README.md",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSObject/NSObject+VariableArgumentPerformSelector.m",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSColor/NSColor+Hex.h",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSPopover/NSPopover+Message.h",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSPopover/NSPopover+Message.m",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSSplitView/NSSplitView+Animation.h",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSSplitView/NSSplitView+Animation.m",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSString/NSString+Size.h",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSString/NSString+Size.m",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSObject/NSObject+VariableArgumentPerformSelector.h",
+		"/Users/facelap/Sites/Work/Code_of_Interest/Stand-Alone/Examples/CocoaCategories/NSColor/NSColor+Hex.m"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/meta-mate",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce,-*.po",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/woocommerce",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/raptor",
+			"/Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/ckeditor-for-wordpress",
+			".button-icon",
+			"/Users/facelap/Sites/www/phoenix-jv.com",
+			"/Users/facelap/Library/Application Support/RapidWeaver/KS REACT POI.rwtheme/Contents",
+			"/Users/facelap/Sites/www/phoenix-jv.com",
+			"/Users/facelap/Library/Application Support/RapidWeaver/KS REACT POI.rwtheme",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"{\n",
+			"neta",
+			"str_replace",
+			"UPLOAD_DIRECTORY_PATH_SEGMENT",
+			"previewFileUploadDirectory",
+			"woocommerce_after_shop_loop_item",
+			"addProductsWrapClose",
+			"woocommerce_before_shop_loop_item",
+			"add_to_cart_button",
+			"$Options",
+			"===",
+			"label",
+			"registerSettings",
+			"::getOptions",
+			"/path/to/this/server",
+			"http://wordpress.org/support/topic/plugin-raptor-editor-not-able-to-open-any-bars-on-dashboard",
+			"handlediv",
+			"WooCommerce plugin.",
+			"The WooCommerce Jive Dig Audio Preview requires the WooCommerce plugin",
+			"Sti",
+			"The WooCommerce Jive Dig Audio Preview requires the WooCommerce plugin",
+			"The WooCommerce Jive Dig Audio Preview requires the WooCommerce plugin.",
+			"__FILE__.'",
+			"__FILE__",
+			"__FILE__);",
+			"$_GEt",
+			"downloadDirectory",
+			"wc jive dig audio preview",
+			"woocommerce_before_shop_loop_item_title",
+			"woocommerce.php",
+			"new Woocommerce()",
+			"Woocommerce()",
+			"->includes()",
+			"frontend_includes",
+			"woocommerce-hooks.php",
+			"woocommerce_before_shop_loop_item",
+			"woocommerce_show_product_thumbnails",
+			"product_thumbnails",
+			"Let the Funk Ride",
+			"shop",
+			"loop",
+			"loop-shop",
+			"loop-shop-cat",
+			"loop-shop-cats",
+			"loop-shop-cats.",
+			"loop-shop-cat.",
+			"loop-shop",
+			"loop-shop.php",
+			"loop-product",
+			"<li class=\"product",
+			"\"product",
+			"dbh;",
+			"dbh = ",
+			"dbh",
+			"send_to_editor",
+			"file path",
+			"download",
+			"downloads",
+			"__DIR__",
+			"plugins_url",
+			"'/rap",
+			"plugins_url",
+			"'raptor/",
+			"encloseEditablePosts",
+			"_(",
+			"listUnordered",
+			"content",
+			"this->save",
+			"addRaptorJs",
+			"disableTinyMCE",
+			"disable",
+			"shortcode",
+			"ed_to",
+			"init",
+			"wp-content-editor-tools",
+			"remove_tinymce",
+			"user_personalopts_update",
+			"add_admin_head",
+			"tinymce",
+			"remove_tiny",
+			"-icon",
+			"productWrap",
+			"line-height",
+			"git",
+			"plus",
+			"-icon",
+			".icon",
+			"-icon",
+			"../",
+			"-icon",
+			"WarpHelperStyleCompressor",
+			"logo",
+			"remove",
+			"$die",
+			"'<?php die(\"Access Den",
+			"str_replace('<?php die(\"Access Den",
+			"eaccelerator_get",
+			"getinstan",
+			"JCache",
+			"&getInstance",
+			"<?php die(\"Access Denied\"); ?>",
+			"&getCache",
+			"var_dump",
+			"JSite",
+			"&getInstance",
+			"getInstance",
+			"&getApplication",
+			"getApplication",
+			"print_r",
+			"[^\\\\]var_dump",
+			"die",
+			"var",
+			"var_dump",
+			"getClientInfo",
+			"getInstance",
+			"JApplication",
+			"getApplication",
+			"n getApplication",
+			"px1",
+			"define('JPATH_BASE'",
+			"'JPATH_BASE'",
+			"cache",
+			"<?php die(\"Access Denied\"); ?>",
+			"$",
+			"jQuery",
+			"avatar",
+			"#social",
+			"comment-edit-link"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"mb_str_replace",
+			"()){",
+			"        \n",
+			"\"..........................................\"",
+			"faceleg",
+			"label",
+			">",
+			"/etc/apache2/certs/home.faceleg.com",
+			"                    ",
+			"'",
+			"                    } ",
+			"wordpressMediaLibrary",
+			"raptorSave",
+			"addRaptor",
+			"    '",
+			".button-icon",
+			"/",
+			"<?",
+			"#__",
+			"jQuery",
+			"$",
+			"        ",
+			"a.comment-reply-link,\na.comment-edit-link",
+			"px1_",
+			"public",
+			"360",
+			"1s",
+			"ease-in-out",
+			"'",
+			"/* ",
+			"product",
+			"Michael Robinson <mike@pagesofinterest.net>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 203.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"config",
+				"mac-update-promo/classes/Config.php"
+			],
+			[
+				"dele",
+				"mac-update-promo/classes/License.php"
+			],
+			[
+				"product",
+				"woocommerce/admin/post-types/product.php"
+			],
+			[
+				"raptoroptions",
+				"raptor/classes/RaptorOptions.php"
+			],
+			[
+				"raptorviewsadmin",
+				"raptor/views/admin/index.php"
+			],
+			[
+				"raptorad",
+				"raptor/classes/RaptorAdmin.php"
+			],
+			[
+				"ind",
+				"raptor/index.php"
+			],
+			[
+				"raptorreadme",
+				"raptor/readme.txt"
+			],
+			[
+				"read",
+				"the-stiz-audio-for-woocommerce/readme.txt"
+			],
+			[
+				"preview",
+				"the-stiz-audio-for-woocommerce/views/product/audio-preview.php"
+			],
+			[
+				"wcjdser",
+				"the-stiz-audio-for-woocommerce/classes/WCJDServeAudio.php"
+			],
+			[
+				"wcjdpro",
+				"the-stiz-audio-for-woocommerce/classes/WCJDProduct.php"
+			],
+			[
+				"adminind",
+				"the-stiz-audio-for-woocommerce/views/admin/index.php"
+			],
+			[
+				"raptorclasses",
+				"raptor-svn/trunk/classes/Raptor.php"
+			],
+			[
+				"raptoradm",
+				"raptor/classes/RaptorAdmin.php"
+			],
+			[
+				"raptoriniti",
+				"raptor/classes/RaptorInitialiser.php"
+			],
+			[
+				"loop-shop",
+				"woocommerce/templates/loop-shop.php"
+			],
+			[
+				"wcjadmin.php",
+				"woocommerce-jive-dig-audio-preview/classes/WCJDAdmin.php"
+			],
+			[
+				"raptoradmin",
+				"raptor/classes/RaptorAdmin.php"
+			],
+			[
+				"initiali",
+				"raptor/classes/RaptorInitialiser.php"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"raptor",
+				"raptor/classes/Raptor.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"adminin",
+				"raptor/views/admin/index.php"
+			],
+			[
+				"admincss",
+				"raptor/css/admin.css"
+			],
+			[
+				"inplace",
+				"raptor/javascript/raptor-in-place-init.js"
+			],
+			[
+				"word",
+				"raptor/javascript/plugins/wordpress-media-library/wordpress-media-library.js"
+			],
+			[
+				"wordpress",
+				"raptor/javascript/plugins/wordpress-media-library/wordpress-media-library.js"
+			],
+			[
+				"",
+				"raptor/classes/Raptor.php"
+			],
+			[
+				"adminindex",
+				"raptor/views/admin/index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true
+}

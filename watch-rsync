@@ -1,0 +1,1 @@
+watch -d rsync -avhi -e ssh /Users/facelap/Sites/Work/Code_of_Interest/Web/wordpress/the-stiz-audio-for-woocommerce/* faceleg@home.faceleg.com:/media/INTERNAL/sites/site.faceleg.com/public/wordpress/wp-content/plugins/the-stiz-audio-for-woocommerce/
